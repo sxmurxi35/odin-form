@@ -24,19 +24,58 @@
 
       <main class="page-main">
         <form action="" method="post" class="page-form">
-          <div class="row">
+          <div class="text-row mar-bot">
+            <h1 class="form-header">Sign Up</h1>
+            <p class="form-text">Fill this form to sign up for our services</p>
+            <p class="required-warning">* means that field is required</p>
+          </div>
+
+          <div class="row mar-bot">
             <label for="u-first-name">First name</label>
-            <input type="text" name="user-first-name" id="u-first-name" />
+            <input
+              type="text"
+              name="user-first-name"
+              id="u-first-name"
+              placeholder="John"
+            />
           </div>
 
-          <div class="row">
+          <div class="row mar-bot mar-big">
             <label for="u-last-name">Last name</label>
-            <input type="text" name="user-last-name" id="u-last-name" />
+            <input
+              type="text"
+              name="user-last-name"
+              id="u-last-name"
+              placeholder="Doe"
+            />
           </div>
 
-          <div class="row">
-            <label for="u-email">Email</label>
-            <input type="text" name="user-email" id="u-email" />
+          <div class="row mar-bot">
+            <label for="u-email">Email *</label>
+            <input
+              type="email"
+              name="user-email"
+              id="u-email"
+              placeholder="john@doe.com"
+              required
+            />
+          </div>
+
+          <div class="row mar-bot mar-end">
+            <label for="u-password">Password *</label>
+            <input
+              type="password"
+              name="user-password"
+              id="u-password"
+              minlength="8"
+              maxlength="22"
+              placeholder="8-22 characters"
+              required
+            />
+          </div>
+
+          <div class="row mar-bot">
+            <button type="submit" class="submit">Submit</button>
           </div>
         </form>
       </main>

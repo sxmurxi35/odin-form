@@ -18,7 +18,7 @@
 
 html {
   font-size: 10px;
-  background-color: #eef4ed;
+  background-color: #134074;
 }
 
 body {
@@ -80,9 +80,23 @@ body {
   margin-top: 50px;
 }
 /*------------- FORM -------------*/
-
 .page-form {
   width: 500px;
+
+  background-color: #8da9c433;
+  border-radius: 10px;
+
+  color: #eef4ed;
+}
+
+.mar-bot {
+  margin-bottom: 25px;
+}
+
+.text-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .row {
@@ -94,8 +108,37 @@ body {
   width: 150px;
   text-align: end;
   padding-right: 25px;
+
+  font-size: 2rem;
 }
 
-.row input[type="text"] {
+.row input {
+  padding: 2px;
   width: 200px;
+  border: none;
+  border-radius: 3px;
+
+  font-family: "Noto Sans";
+}
+
+.mar-big {
+  margin-bottom: 45px;
+}
+
+.mar-end {
+  margin-bottom: 75px;
+}
+
+.row input[type="email"]:invalid,
+.row input[type="password"]:invalid {
+  border: 2px solid #d30000;
+}
+
+.row input[type="email"]:valid,
+.row input[type="password"]:valid {
+  border: 2px solid #16b900;
+}
+
+.row input {
+  height: 30px;
 }
